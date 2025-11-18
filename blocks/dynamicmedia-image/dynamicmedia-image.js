@@ -24,7 +24,7 @@ export default async function decorate(block) {
   let crop = inputs[4]?.textContent?.trim();
   let altText = inputs[5]?.textContent?.trim();
 
-  if(deliveryType != "na" && shouldHide == false){  
+  if(deliveryType != "na"){  
       if(deliveryType === 'dm'){
           // Get DM Url input
           let dmUrlEl = await getDynamicMediaServerURL();
